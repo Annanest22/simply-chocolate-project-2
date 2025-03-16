@@ -43,9 +43,48 @@
                 </a>
             </li>
         </ul>
+        <button class="burger-menu-btn" type="button" data-menu-open>
+            <svg class="btn-mob-icon" width="28" height="28">
+              <use href="./images/icons.svg#menu"></use>
+            </svg>
+        </button>
     </div>
    </header>
    <!-- #endregion header  -->
+    <!-- #region mobile menu  -->
+<div class="mobile-menu-backdrop is-open" data-menu>
+    <div class="mobile-menu">
+    <button class="menu-close-btn" type="button" data-menu-close>
+        <svg class="menu-close-icon" width="28" height="28">
+          <use href="./images/icons.svg#menu-close-btn"></use>
+        </svg>
+    </button>
+    <nav class="menu-nav">
+        <ul class="menu-nav-list">
+            <li class="menu-nav-item"><a class="menu-nav-item-link current" href="#">Home</a></li>
+            <li class="menu-nav-item"><a class="menu-nav-item-link" href="#">How it's made?</a></li>
+            <li class="menu-nav-item"><a class="menu-nav-item-link" href="#">Chocolate is loved</a></li>
+        </ul>
+    </nav>
+    <ul class="menu-icon-list">
+        <li class="menu-item-icon">
+            <a href="#" class="menu-icon-link">
+                <svg class="menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="menu-item-icon">
+            <a href="#" class="menu-icon-link">
+                <svg class="menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+   <!-- #endregion mobile menu  -->
    <!-- #region Hero section-->
    <section class="section hero">
     <div class="container">
@@ -61,7 +100,6 @@
                           <use href="./images/icons.svg#Vector"></use>
                         </svg>
                     </div></a>
-                    
                 <!-- </div> -->
             </div>
     </div>
@@ -109,7 +147,34 @@
            <ul class="taste-list">
         <li class="taste-list-item orange-img">
            <!-- <div class="taste-container"> -->
-                <img class="taste-image" src="./images/chocolate.png" alt="Chocolate" width="206" height="160">
+                <!-- <img class="taste-image" src="./images/chocolate.png" alt="Chocolate" width="206" height="160"> -->
+                <picture class="taste-image">
+                    <source
+                      srcset="
+                        ./images/ingredients/choco-desktop.png    1x,
+                        ./images/ingredients/choco-desktop@2x.png 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/ingredients/choco-desktop.png    1x,
+                      ./images/ingredients/choco-desktop@2x.png 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/ingredients/choco-mobile.png    1x,
+                      ./images/ingredients/choco-mobile@2x.png 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/ingredients/choco-mobile.png"
+                      alt="A sequence of steps for the setup of a banking app Illustrated by images of mobile phone screens"
+                    />
+                  </picture>
                 <h3 class="taste-list-title">milk chocolate</h3>
             <!-- </div>  -->
             <div class="overlay-container">
@@ -124,7 +189,34 @@
         </li>
         <li class="taste-list-item white">
            <!-- <div class="taste-container"> -->
-                <img class="taste-image" src="./images/milk.png" alt="milk" width="206" height="160">
+                <!-- <img class="taste-image" src="./images/milk.png" alt="milk" width="206" height="160"> -->
+                <picture class="taste-image">
+                    <source
+                      srcset="
+                      ./images/ingredients/milk-desktop.png    1x,
+                      ./images/ingredients/milk-desktop@2x.png 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/ingredients/milk-desktop.png    1x,
+                      ./images/ingredients/milk-desktop@2x.png 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/ingredients/milk-mobile.png    1x,
+                      ./images/ingredients/milk-mobile@2x.png 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/ingredients/milk-mobile.png"
+                      alt="A sequence of steps for the setup of a banking app Illustrated by images of mobile phone screens"
+                    />
+                  </picture>
                 <h3 class="taste-list-title-two">milk</h3>
             <!-- </div>  -->
             <div class="overlay-container">
@@ -139,7 +231,34 @@
         </li>
         <li class="taste-list-item black">
             <!-- <div class="taste-container"> -->
-                <img class="taste-image" src="./images/nuts.png" alt="nuts" width="206" height="160">
+                <!-- <img class="taste-image" src="./images/nuts.png" alt="nuts" width="206" height="160"> -->
+                <picture class="taste-image">
+                    <source
+                      srcset="
+                      ./images/ingredients/nuts-desktop.png    1x,
+                      ./images/ingredients/nuts-desktop@2x.png 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/ingredients/nuts-desktop.png    1x,
+                      ./images/ingredients/nuts-desktop@2x.png 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/ingredients/nuts-mobile.png    1x,
+                      ./images/ingredients/nuts-mobile@2x.png 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/ingredients/nuts-mobile.png "
+                      alt="A sequence of steps for the setup of a banking app Illustrated by images of mobile phone screens"
+                    />
+                  </picture>
                 <h3 class="taste-list-title">nuts</h3>
             <!-- </div> -->
             <div class="overlay-container">
@@ -154,7 +273,34 @@
         </li>
         <li class="taste-list-item white">
             <!-- <div class="taste-container"> -->
-                <img class="taste-image" src="./images/semi.png" alt="semi" width="206" height="160" >
+                <!-- <img class="taste-image" src="./images/semi.png" alt="semi" width="206" height="160" > -->
+                <picture class="taste-image">
+                    <source
+                      srcset="
+                      ./images/ingredients/semi-desktop.png    1x,
+                      ./images/ingredients/semi-desktop@2x.png 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/ingredients/semi-desktop.png    1x,
+                      ./images/ingredients/semi-desktop@2x.png 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/ingredients/semi-mobile.png    1x,
+                      ./images/ingredients/semi-mobile@2x.png 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/ingredients/semi-mobile.png "
+                      alt="A sequence of steps for the setup of a banking app Illustrated by images of mobile phone screens"
+                    />
+                  </picture>
                 <h3 class="taste-list-title-two">semi - sweet chocolate</h3>
             <!-- </div> -->
             <div class="overlay-container">
@@ -173,11 +319,39 @@
 <!-- #endregion taste -->
    <!-- #region made -->
     <section class="made" id="made">
-    <div class="container">
+    <div class="container made-container">
         <h2 class="made-title">HOW IT'S <span class="orange">made?</span></h2>
         <div class="made-process">
-            <img src="./images/hot.png" alt="cooking" width="600" height="400">
-            <div class="made-process-desc">
+            <!-- <img src="./images/hot.png" alt="cooking" width="600" height="400"> -->
+            <picture class="portfolio-picture">
+                <source
+                  srcset="
+                  ./images/making/making-desktop.jpg    1x,
+                  ./images/making/making-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                  ./images/making/making-tablet.jpg    1x,
+                  ./images/making/making-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  
+                  ./images/making/making-mobile.jpg    1x,
+                    ./images/making/making-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/making/making-mobile.jpg"
+                  alt="A sequence of steps for the setup of a banking app Illustrated by images of mobile phone screens"
+                />
+              </picture>
+            <div class="made-process-desc-container">
                 <h3 class="made-title-text">Try  our chocolates today and discover the perfect balance of flavor</h3>
                 <ul class="made-list">
                     <li class="made-list-item">
@@ -218,28 +392,84 @@
         <h2 class="love-title"><span class="orange">chocolate</span> is loved</h2>
         <ul class="love-list">
             <li class="love-list-item">
-                <img class="love-image" src="./images/viktoria.png" alt="girl"  width="80" height="80">
+                <!-- <img class="love-image" src="./images/viktoria.png" alt="girl"  width="80" height="80"> -->
+                <picture class="love-image">
+                  <source
+                    srcset="
+                      ./images/names/victoria.png  1x,
+                      ./images/names/victoria@2x.png  2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/names/victoria.png"
+                    alt="A sequence of steps for the setup of a banking app Illustrated by images of mobile phone screens"
+                    width="80px"
+                    height="80px"
+                  />
+                </picture>
                 <h3 class="love-list-title">Victoria Dobrzhanska</h3>
                 <p class="love-list-text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
             </li>
             <li class="love-list-item">
-                <img class="love-image" src="./images/nazar.png" alt="boy" width="80" height="80">
+                <!-- <img class="love-image" src="./images/nazar.png" alt="boy" width="80" height="80"> -->
+                <picture class="love-image">
+                  <source
+                    srcset="
+                    ./images/names/nazar.png    1x,
+                    ./images/names/nazar@2x.png  2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/names/nazar.png"
+                    alt="A sequence of steps for the setup of a banking app Illustrated by images of mobile phone screens"
+                    width="80px"
+                    height="80px"
+                  />
+                </picture>
                 <h3 class="love-list-title">Nazar Babenko</h3>
                 <p class="love-list-text">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
             </li>
             <li class="love-list-item">
-                <img class="love-image" src="./images/olena.png" alt="girl" width="80" height="80">
+                <!-- <img class="love-image" src="./images/olena.png" alt="girl" width="80" height="80"> -->
+                <picture class="love-image">
+                  <source
+                    srcset="
+                    ./images/names/olena.png    1x,
+                    ./images/names/olena@2x.png  2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/names/olena.png"
+                    alt="A sequence of steps for the setup of a banking app Illustrated by images of mobile phone screens"
+                    width="80px"
+                    height="80px"
+                  />
+                </picture>
                 <h3 class="love-list-title">Olena Kampusch</h3>
                 <p class="love-list-text">Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
             </li>
         </ul>
+        <div class="rectagle-container">
+        <svg class="rectagle-icon" width="28" height="13">
+          <use href="./images/icons.svg#rectangle"></use>
+        </svg>
+        <svg class="ellipse-icon" width="14" height="13">
+          <use href="./images/icons.svg#ellipse"></use>
+        </svg>
+        <svg class="ellipse-icon" width="14" height="13">
+          <use href="./images/icons.svg#ellipse"></use>
+        </svg>
+      </div>
         <button class="love-btn" type="button" data-modal-open>Leave a review</button>
     </div>
    </section>
    <!-- #endregion love -->
     <!-- #region footer -->
    <footer class="footer" id="footer">
-    <div class="container">
+    <div class="container footer-container">
         <div class="footer-desc">
             <p class="footer-text"><span class="orange">Chocolate</span> a delicious cure for a bad day</p>
             <address class="footer-addr">
@@ -254,11 +484,14 @@
             <ul class="nav-header-list">
                 <li class="nav-header-item"><a class="footer-nav-item-link" href="#">Home</a></li>
                 <li class="nav-header-item"><a class="footer-nav-item-link" href="#">How it's made?</a></li>
-                <li class="nav-header-item"><a class="footer-nav-item-link" href="#">Chocolate is loved</a></li><div class="subscribe-container">
-        <label for="">
-            <input class="subscribe-placeholder" type="text" title="user-email" name="user-email" id="user-email" placeholder="Enter your email"></label>
-    <button class="subscribe-btn" type="submit" >Subscribe</button>
-    </div>
+                <li class="nav-header-item"><a class="footer-nav-item-link" href="#">Our products</a></li>
+                <li class="nav-header-item"><a class="footer-nav-item-link" href="#">Top sellers</a></li>
+                <li class="nav-header-item"><a class="footer-nav-item-link" href="#">Chocolate is loved</a></li>
+          <div class="subscribe-container">
+                <label for="">
+                <input class="subscribe-placeholder" type="text" title="user-email" name="user-email" id="user-email" placeholder="Enter your email"></label>
+    <button class="subscribe-btn" type="submit">Subscribe</button>
+         </div>
             </ul>
         </nav>
     </div>
@@ -268,7 +501,7 @@
    <!-- #endregion footer -->
 
    <!-- #region backdrop  -->
-   <div class="backdrop" data-modal>
+   <div class="backdrop" data-modal hidden>
     <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
             <svg class="close-btn-icon" width="28" height="28">
@@ -326,6 +559,9 @@
     </div>
    </div>
    <!-- #endregion backdrop -->
+   
+   
    <script src="./js/modal.js"></script>
+   <script src="./js/menu.js"></script>
 </body>
 </html>
